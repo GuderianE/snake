@@ -1,0 +1,75 @@
+body {
+  position: relative;
+  background-color: #a1cf7b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.snake {
+  position: relative;
+  background-color: slategray;
+  width: 100vmin;
+  height: 100vmin;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[22];
+      grid-template-columns: repeat(22, 1fr);
+  -ms-grid-rows: (1fr)[22];
+      grid-template-rows: repeat(22, 1fr);
+}
+
+.snake .snakebox {
+  width: 1fr;
+  height: 1fr;
+  background-color: #4643ff;
+  border: .3rem solid black;
+}
+
+.snake .foodbox {
+  width: 1fr;
+  height: 1fr;
+  background-color: #e3ff43;
+  border: .3rem solid black;
+}
+
+.snake .count {
+  position: absolute;
+  color: #a1cf7b;
+  right: 30px;
+  top: 0;
+}
+
+.start-overlay {
+  position: absolute;
+  background-color: #a1cf7b;
+  color: slategray;
+  text-align: center;
+  width: 50%;
+  height: 200px;
+  z-index: 10;
+  top: 30%;
+  left: 25%;
+}
+
+.start-overlay h1 {
+  margin: 2.5rem 0;
+}
+
+.start-overlay .button {
+  display: inline-block;
+  padding: .5rem;
+  border-radius: .3rem;
+  background-color: #e3ff43;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=app.css.map */
